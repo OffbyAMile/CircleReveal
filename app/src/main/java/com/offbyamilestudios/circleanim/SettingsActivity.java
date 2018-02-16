@@ -21,28 +21,14 @@ public class SettingsActivity extends AppCompatActivity {
                 actionBar.setDisplayHomeAsUpEnabled(true);
             }
 
-            // Display the fragment as the settings screen
-        FragmentManager mfragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = mfragmentManager
-                .beginTransaction();
-        PrefsFragment mPrefsFragment = new PrefsFragment();
-        fragmentTransaction.replace(android.R.id.content, mPrefsFragment, );
-        fragmentTransaction.commit();
-    }
 
-    public static class PrefsFragment extends PreferenceFragment {
 
-        @Override
-        public void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            addPreferencesFromResource(R.xml.settings_screen);
 
-            SharedPreferences switchPrefStatus
+
+
         }
 
-    }
-
-    @Override
+        @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
             if (id == android.R.id.home) {
