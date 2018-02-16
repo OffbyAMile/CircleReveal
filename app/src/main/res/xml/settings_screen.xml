@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="switch_theme"
+        android:title="Enable Dark Theme"
+        android:defaultValue="false"
+        android:summaryOn="Currently using dark theme"
+        android:summaryOff="Currently using light theme"
+        android:textColor="@color/colorAccent"
+        android:icon="@drawable/ic_format"/>
+
+</PreferenceScreen>
